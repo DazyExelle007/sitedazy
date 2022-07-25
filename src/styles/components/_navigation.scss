@@ -1,0 +1,62 @@
+.mynave{
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  .navigation{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .dazy{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    ul{
+      display: flex;
+      align-items: center;
+      width: 400px;
+    //  background-color: wheat;
+      justify-content: space-between;
+      a{
+        transition: 0.2s;
+        li{
+
+        }
+      }
+      
+    }
+  }
+}
+
+.nav-active{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #fe5f50;
+    border-radius: 5px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-animation: anim 0.3s ease forwards;
+    animation: anim 0.6s ease forwards;
+    @-webkit-keyframes anim {
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes anim {
+      to {
+        width: 100%;
+      }
+    }
+
+  }
+
+ 
+}
