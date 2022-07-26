@@ -63,3 +63,87 @@
 
  
 }
+
+@media screen and (max-width: 1100px){
+  .mynave{
+    .navigation{
+      width: 80%;
+      margin: 0 auto;
+    
+      .dazy{
+        font-size: 1.5rem;
+      
+      }
+  
+      ul{
+      
+        width: 500px;
+       
+        a{
+         
+          li{
+  
+          }
+        }
+        
+      }
+    }
+  }
+  
+ 
+}
+
+@media screen and (max-width: 830px){
+  .mynave{
+    .navigation{
+      width: 80%;
+      margin: 0 auto;
+    
+      .dazy{
+        font-size: 1.5rem;
+      
+      }
+  
+      ul{
+        width: 400px;
+        a{
+         
+          li{
+            font-size: .7rem;
+          }
+        }
+        
+      }
+    }
+  }
+  
+ 
+}
+
+@media screen and (max-width: 700px){
+  .mynave{
+    .navigation{
+      width: 80%;
+      margin: 0 auto;
+    
+      .dazy{
+        font-size: 1.5rem;
+      
+      }
+  
+      ul{
+        width: 400px;
+        display: none;
+        a{
+         
+          li{
+            font-size: .7rem;
+          }
+        }
+        
+      }
+    }
+  }
+  
+ 
+}

@@ -1,9 +1,10 @@
-import React from 'react';
-import {NavLink} from "react-router-dom"
+import React, { Component } from 'react';
+import {NavLink} from "react-router-dom";
 
-const Navigation = () => {
-    return (
-        <nav className='mynave'>
+class Navigation extends Component {
+    render() {
+        return (
+            <nav className='mynave'>
             <div className='navigation'>
                 <div className='dazy'>
                     Dazy Exelle 
@@ -25,10 +26,18 @@ const Navigation = () => {
                         <li>Contact</li>
                     </NavLink>
                 </ul>
+
+                <div className='mybars' onClick={this.handleClick}>
+                  <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                </div>
             </div>
         </nav>
-        
-    );
-};
+        );
+    }
+}
 
 export default Navigation;
+
+
+
+

@@ -13,9 +13,14 @@ const App = () => {
 
       <Route path="/apropos" element={<Apropos/>} />
 
+      <Route path="/commencer" element={<Apropos/>} />
+
       <Route path="/competance" element={<Competance/>} />
 
+
       <Route path="/contact" element={<Contact/>} />
+
+      
 
       {/*path="*" functionne si jamais l'url ne correspond à rien de déclaré au dessus*/}
       <Route path="*" element={<Home/>} />

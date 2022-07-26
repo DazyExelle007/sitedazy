@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import Social from '../components/Social';
 import Monprofil from "../assets/img/maki.jpg"
 import Myboutton from '../components/Myboutton';
+import {NavLink} from "react-router-dom"
 
 
 const Home = () => {
@@ -20,7 +21,10 @@ const Home = () => {
                    <div className='content-right'>
                      <img src={Monprofil} alt="" />
                    </div>
-                   <Myboutton/>
+                   <NavLink  to="/commencer" className='mybouton'>
+                       <Myboutton/>
+                   </NavLink>
+                 
                    </div>
                    
                  
