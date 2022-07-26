@@ -4,8 +4,8 @@ $font-1: 'Lato', sans-serif;
 
 
 
-$color-1: #61dafb;
-$color-2: salmon;
+$color-1:#fa6400;
+$color-2: #fb8332;
 $color-3: #282c34;
 $white: #fff;
 
@@ -29,4 +29,16 @@ body {
 }
 li {
   list-style-type: none;
+}
+
+.container{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: space-between;
 }

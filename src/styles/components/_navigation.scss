@@ -1,7 +1,8 @@
 .mynave{
-  height: 4rem;
+  height: 6vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   .navigation{
     width: 60%;
@@ -10,16 +11,18 @@
     align-items: center;
     justify-content: space-between;
     .dazy{
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
     }
 
     ul{
       display: flex;
       align-items: center;
-      width: 400px;
-    //  background-color: wheat;
+      width: 500px;
+      text-transform: uppercase;
       justify-content: space-between;
+      font-size: 0.8rem;
+      font-weight: bold;
       a{
         transition: 0.2s;
         li{
@@ -38,7 +41,7 @@
     position: absolute;
     width: 0;
     height: 4px;
-    background-color: #fe5f50;
+    background-color: $color-1;
     border-radius: 5px;
     bottom: -8px;
     left: 50%;
