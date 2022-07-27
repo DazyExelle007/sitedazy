@@ -26,11 +26,9 @@ const Home = () => {
                    </NavLink>
                  
                    </div>
-                   
-                 
-                   
+                   <Social/>  
             </div>
-            <Social/>
+            
         </div>
     );
 };

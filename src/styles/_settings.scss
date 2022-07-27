@@ -52,3 +52,19 @@ li {
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: 700px){
+  .container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    justify-content: space-between;
+    .mybouton{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

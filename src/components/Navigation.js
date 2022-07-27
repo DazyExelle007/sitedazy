@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import {NavLink} from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 class Navigation extends Component {
+
+state = {clicked: false}
+
+handleClick = () =>{
+    this.setState({clicked: !this.state.clicked})
+}
+
     render() {
         return (
             <nav className='mynave'>
@@ -9,7 +19,12 @@ class Navigation extends Component {
                 <div className='dazy'>
                     Dazy Exelle 
                 </div>
-                <ul>
+
+                <div className='hamburger' onClick={this.handleClick}>
+                <FontAwesomeIcon className='menu-bars' icon={this.state.clicked ? faTimes : faBars}/>
+                </div>
+                
+                <ul className={this.state.clicked ? 'active' : 'nav-menu'}>
                     <NavLink to="/" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
                         <li>Accueil</li>
                     </NavLink>
@@ -26,10 +41,8 @@ class Navigation extends Component {
                         <li>Contact</li>
                     </NavLink>
                 </ul>
-
-                <div className='mybars' onClick={this.handleClick}>
-                  <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-                </div>
+                
+                
             </div>
         </nav>
         );
