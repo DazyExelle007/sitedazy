@@ -2,7 +2,8 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Monprofil from "../assets/img/maki.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faLanguage, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCreativeCommons } from '@fortawesome/free-brands-svg-icons';
 
 
 const Apropos = () => {
@@ -21,6 +22,7 @@ const Apropos = () => {
                 <ul className='all-info'>
                     <li>
                      <h1>Pastemps</h1>
+                     <FontAwesomeIcon icon={faLanguage}/>
                     <div className='content'>
                         <p>Lire</p>
                         <p>Music</p>
@@ -28,6 +30,7 @@ const Apropos = () => {
                     </li>
                     <li>
                      <h1>Pastemps</h1>
+                     <FontAwesomeIcon icon={faUserPlus}/>
                     <div className='content'>
                         <p>Lire</p>
                         <p>Music</p>
@@ -35,11 +38,13 @@ const Apropos = () => {
                     </li>
                     <li>
                      <h1>Pastemps</h1>
+                     <FontAwesomeIcon icon={faCreativeCommons}/>
                     <div className='content'>
                         <p>Lire</p>
                         <p>Music</p>
                     </div>
                     </li>
+                 
                 </ul>
                 
             </div>
