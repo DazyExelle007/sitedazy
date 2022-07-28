@@ -2,8 +2,9 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Monprofil from "../assets/img/maki.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLanguage, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import {  faLanguage, faLocation} from '@fortawesome/free-solid-svg-icons';
 import { faCreativeCommons } from '@fortawesome/free-brands-svg-icons';
+import Social from '../components/Social';
 
 
 const Apropos = () => {
@@ -13,35 +14,36 @@ const Apropos = () => {
            <div className='group-about'>
             <div className='left-about'>
                 <div className="about-title">
-                <h1>Tous a savoir sur moi</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolores accusantium ipsam quia nostrum.
-                     Aspernatur voluptatibus quod consectetur sit consequuntur odio voluptatem, 
-                     obcaecati tempora rem natus eos sint saepe doloribus?</p>
+                <h1>Tout a savoir sur moi</h1>
+                <p> Né le 20 avril 1992 Madagascar. Après quatre ans d’études en Droit, 
+                    en découvrent l'informatique et la pension en langage informatique, 
+                    j'ai décidé de suivre une formation en informatique bureautique, ainsi qu'une formation en langage informatique.
+                    Et je veux en savoir plus sur le domaine du développement web.</p>
                 </div>
 
                 <ul className='all-info'>
-                    <li>
-                     <h1>Pastemps</h1>
-                     <FontAwesomeIcon icon={faLanguage}/>
+                <li>
+                     <h1>Origine</h1>
+                     <FontAwesomeIcon className='info-icon'  icon={faLocation}/>
                     <div className='content'>
-                        <p>Lire</p>
-                        <p>Music</p>
+                        <p>Madagascar</p>
+                        <p>Fianarantsoa</p>
+                    </div>
+                    </li>
+                    <li>
+                     <h1>Langue</h1>
+                     <FontAwesomeIcon className='info-icon'  icon={faLanguage}/>
+                    <div className='content'>
+                        <p>Malagasy</p>
+                        <p>Français</p>
                     </div>
                     </li>
                     <li>
                      <h1>Pastemps</h1>
-                     <FontAwesomeIcon icon={faUserPlus}/>
+                     <FontAwesomeIcon className='info-icon'  icon={faCreativeCommons}/>
                     <div className='content'>
-                        <p>Lire</p>
                         <p>Music</p>
-                    </div>
-                    </li>
-                    <li>
-                     <h1>Pastemps</h1>
-                     <FontAwesomeIcon icon={faCreativeCommons}/>
-                    <div className='content'>
-                        <p>Lire</p>
-                        <p>Music</p>
+                        <p>Cuisiné</p>
                     </div>
                     </li>
                  
@@ -50,8 +52,10 @@ const Apropos = () => {
             </div>
 
             <div className='right-about'>
-                <img src={Monprofil} />
+                <img src={Monprofil} alt=""/>
+                 
             </div>
+            <Social/> 
            </div>
         </div>
     );
