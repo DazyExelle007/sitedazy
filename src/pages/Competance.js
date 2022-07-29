@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import Myboutton from '../components/Myboutton';
+import Mylargeboutton from '../components/Mylargeboutton';
 import {NavLink} from "react-router-dom"
 
 const Competance = () => {
@@ -29,7 +29,7 @@ const Competance = () => {
                             <div data-content="Librairie React" className='barract'></div>
                         </li>
                         <li>
-                            <div data-content="Position Autodidacte" className='barstrap'></div>
+                            <div data-content="Position Autodidacte" className='barauto'></div>
                         </li>
                         
                     </ul>
@@ -45,12 +45,14 @@ const Competance = () => {
                         </li>
                        
                     </ul>
+                    <hr/>
+                    <div className='bottom-text'>
+                       <p>“N'importe quel idiot peut écrire du code qu'un ordinateur peut comprendre.
+                          Les bons programmeurs écrivent du code que les humains peuvent comprendre.” - Martin Fowler.
+                        </p>
 
-                    <p>“N'importe quel idiot peut écrire du code qu'un ordinateur peut comprendre.
-                     Les bons programmeurs écrivent du code que les humains peuvent comprendre.” - Martin Fowler.</p>
-                    <div className='mycv'>
-                        <NavLink  to="/moncv" className='mybouton'>
-                        <Myboutton/>
+                        <NavLink  to="/moncv" className='cvbouton'>
+                            <Mylargeboutton/>
                         </NavLink>
                      </div>
 
@@ -85,15 +87,18 @@ const Competance = () => {
                         </li>
                     </ul>
 
-                    <div className='myspeak'>
-                <p>
-                Je suis ouvert à toute proposition que vous me proposerez, je suis impatient d'intégrer votre entreprise.
-                 Partager mes compétences au cours de ma formation et de mes recherches personnelles et aller au-delà de mes limites dans mon travail.
-                </p>
-                <strong>
-                Si vous avez besoin d'aide, n'hésitez pas à me contacter, j'ai hâte de vous aider et d'élargir mes compétences.
-                </strong>
-                </div>
+                    <hr/>
+
+                    <div className='bottom-text'>
+                            <p>
+                            Je suis ouvert à toute proposition que vous me proposerez, je suis impatient d'intégrer votre entreprise.
+                            Partager mes compétences au cours de ma formation et de mes recherches personnelles et aller au-delà de mes limites dans mon travail.
+                            </p>
+                            <strong>
+                            Si vous avez besoin d'aide, n'hésitez pas à me contacter, j'ai hâte de vous aider et d'élargir mes compétences.
+                            </strong>
+                    </div>
+            
 
                 </div>
                 
