@@ -11,9 +11,12 @@ const Contact = () => {
             <Navigation/>
             <div className='mycontact container'>
                 <div className='tite-contact'>
-                        <h1>Contact</h1>
+                        <h1>Rester en contact</h1>
+
                 </div>
-            
+                <div className='localisation'>
+                             <Mylocalisation />
+                </div>
                 <div className='contact-content'>
                     <div className='left-contact'>
                         <h2>Contact rapide</h2>
@@ -42,11 +45,37 @@ const Contact = () => {
 
                     <div className='rigth-contact'>
                         <h2>Envoyer un message</h2>
-                        <div className='localisation'>
-                       <Mylocalisation/>
-                        </div>
+                        
                         <div className='formulaire'>
+                            <form>
+                                <div className='group-input'>
+                                    <label>
+                                    Nom :
+                                    <input type="text" name="name" />
+                                    </label>
+                                </div>
+                                <div className='group-input'>
+                                    <label>
+                                    Email :
+                                    <input type="text" name="name" />
+                                    </label>
+                                </div>
+                                <div className='group-input'>
+                                    <label>
+                                    Objet :
+                                    <input type="text" name="name" />
+                                    </label>
+                                </div>
+                                <div className='group-input'>
+                                    <label>
+                                    Message :
+                                    <input type="text" name="name" />
+                                    </label>
+                                </div>
+                           
                             
+                            <input type="submit" value="Envoyer" />
+                            </form>
                         </div>
                     </div>
                 </div>
