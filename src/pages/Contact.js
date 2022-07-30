@@ -16,27 +16,27 @@ const Contact = () => {
                 </div>
                 <div className='localisation'>
                              <Mylocalisation />
-                </div>
-                <div className='contact-content'>
+
+                    <div className='contact-content'>
                     <div className='left-contact'>
                         <h2>Contact rapide</h2>
                         <div className='contact-rapide'>
                             <ul className='card'>
                                 <li>
-                                <FontAwesomeIcon icon={faPhone}/>
-                                +261 347402412
+                                <FontAwesomeIcon className='icon' icon={faPhone}/>
+                                <p>+261 347402412</p>
                                 </li>
                                 <li>
-                                <FontAwesomeIcon icon={faEnvelope}/>
-                                +261 347402412
+                                <FontAwesomeIcon className='icon' icon={faEnvelope}/>
+                                <p>dazyexelle@gmail.com</p>
                                 </li>
                                 <li>
-                                <FontAwesomeIcon icon={faLocationDot}/>
-                                +261 347402412
+                                <FontAwesomeIcon className='icon' icon={faLocationDot}/>
+                                <p>Fianarantsoa-Madagascar</p>
                                 </li>
                                 <li>
-                                <FontAwesomeIcon icon={faPhone}/>
-                                +261 347402412
+                                <FontAwesomeIcon className='icon' icon={faPhone}/>
+                                 <p>+261 347402412</p> 
                                 </li>
                             
                             </ul>
@@ -49,36 +49,38 @@ const Contact = () => {
                         <div className='formulaire'>
                             <form>
                                 <div className='group-input'>
-                                    <label>
-                                    Nom :
+                                    <label>Nom : </label>
+                                    
                                     <input type="text" name="name" />
-                                    </label>
+                                   
                                 </div>
                                 <div className='group-input'>
-                                    <label>
-                                    Email :
+                                    <label> Email : </label>
+                                   
                                     <input type="text" name="name" />
-                                    </label>
+                                   
                                 </div>
                                 <div className='group-input'>
-                                    <label>
-                                    Objet :
+                                    <label>Objet :</label>
+                                    
                                     <input type="text" name="name" />
-                                    </label>
+                                    
                                 </div>
                                 <div className='group-input'>
-                                    <label>
-                                    Message :
-                                    <input type="text" name="name" />
-                                    </label>
+                                    <label>Message :</label>
+                                    
+                                    <textarea type="text" name="name" />
+                                    
                                 </div>
                            
                             
-                            <input type="submit" value="Envoyer" />
+                            <input className='btn-send' type="submit" value="Envoyer" />
                             </form>
                         </div>
                     </div>
                 </div>
+                </div>
+              
             </div>
         </div>
     );
