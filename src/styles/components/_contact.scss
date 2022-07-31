@@ -38,7 +38,11 @@
                }
 
                .contact-rapide{
+                display: flex;
+                justify-content: left;
+                align-items: center;
                 .card{
+                    
                     li{
                         display: flex;
                         align-items: center;
@@ -91,7 +95,7 @@
 
                     .btn-send{
                         width: 100%;
-                        padding: 4px;
+                        padding: 10px;
                         background-color: $color-1;
                         border: none;
                         border-radius: 2px;
@@ -106,4 +110,94 @@
         }
     }
    
+}
+
+
+@media screen and (max-width:700px){
+
+    .mycontact{
+        .tite-contact{
+            h1{
+                text-align:center ;
+                padding:2rem ;
+                text-transform: uppercase;
+                font-weight: bold;
+                position: relative;
+                font-size: 1rem;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 80%;
+                    left: 50%;
+                    transform: translate(-50%, -70%);
+                    height: 4px;
+                    width: 100px;
+                    background-color: $color-1;
+                }
+            }
+           
+        }
+        .localisation{
+            width: 100%;
+            height: 250px;
+            .contact-content{
+                display: flex;
+                flex-direction: column-reverse;
+                .left-contact{
+                    width: 100%;
+                   h2{
+                   
+                   }
+    
+                   .contact-rapide{
+                  
+                    .card{
+                        
+                        li{
+                            
+                            .icon{
+                              
+                                
+                            }
+                        }
+                    }
+                   }
+                }
+    
+                .rigth-contact{
+                    width: 100%;
+                    h2{
+                       
+                    }
+    
+                    .formulaire{
+                        .group-input{
+                          
+    
+                            input{
+                                
+                            }
+    
+                            textarea{
+                                
+                            }
+                            
+                        }
+    
+                        .btn-send{
+                            width: 100%;
+                           
+                            &:hover{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+    
+
+
 }
